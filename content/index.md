@@ -1,6 +1,7 @@
 ---
-title: Welcome to Quartz
+title: Cr4y0 Notes
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Notas de pentesting, red team y seguridad ofensiva.
+
+Selección curada de apuntes de estudio y práctica — certificaciones, cheatsheets y writeups de labs públicos (PortSwigger, HTB, etc).
