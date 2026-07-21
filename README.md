@@ -2,7 +2,7 @@
 
 Sitio público generado con [Quartz](https://quartz.jzhao.xyz/) a partir de una selección curada de `Obsidian-Apuntes` (repo privado).
 
-URL final una vez desplegado: `https://0xCr4y.github.io/cr4y0-notes`
+URL final una vez desplegado: `https://0xCr4y.github.io/Cr4y0-Notes`
 
 ## Regla de oro
 

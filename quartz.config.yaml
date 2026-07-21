@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: 0xCr4y.github.io/cr4y0-notes
+  baseUrl: 0xCr4y.github.io/Cr4y0-Notes
   ignorePatterns:
     - private
     - templates
