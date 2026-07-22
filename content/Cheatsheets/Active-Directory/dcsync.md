@@ -7,6 +7,9 @@ tags: [active-directory, oscp, crte, cpts]
 
 Abusa del protocolo de replicación de Active Directory (MS-DRSR) para pedirle a un Domain Controller que "replique" las credenciales de cualquier usuario, incluyendo `krbtgt`. Requiere que la cuenta atacante tenga los derechos `DS-Replication-Get-Changes` y `DS-Replication-Get-Changes-All` sobre el dominio.
 
+> [!warning] Impacto alto
+> Con este derecho se compromete el dominio completo, no solo una cuenta. Confirmar el hallazgo antes de ejecutar en un engagement real — es de los pocos pasos que conviene coordinar con el cliente.
+
 ## Enumerar quién tiene el derecho
 
 ```powershell

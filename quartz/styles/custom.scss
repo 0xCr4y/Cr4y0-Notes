@@ -1,3 +1,37 @@
 @use "./variables.scss" as *;
+@use "sass:list";
 
 // put your custom CSS here!
+
+// Badges de color por tema (independientes del acento del sitio).
+// El color identifica el TEMA (Active Directory, Web, Wifi...) de un vistazo,
+// mientras que los tags de certificacion (oscp, cpts, crte...) se quedan
+// en el acento indigo por defecto del sitio.
+$topic-colors: (
+  "active-directory": #7c3aed #a78bfa,
+  "web": #0d9488 #2dd4bf,
+  "wifi": #c2570c #fb923c,
+  "review": #be185d #f472b6,
+  "mobile": #15803d #4ade80,
+  "cloud": #0369a1 #38bdf8,
+);
+
+@each $topic, $pair in $topic-colors {
+  $light: list.nth($pair, 1);
+  $dark: list.nth($pair, 2);
+
+  a.tag-link[href*="/tags/#{$topic}"] {
+    color: $light;
+    background-color: color-mix(in srgb, $light 14%, transparent);
+
+    &:hover {
+      color: $light;
+      opacity: 0.8;
+    }
+  }
+
+  html[saved-theme="dark"] a.tag-link[href*="/tags/#{$topic}"] {
+    color: $dark;
+    background-color: color-mix(in srgb, $dark 18%, transparent);
+  }
+}

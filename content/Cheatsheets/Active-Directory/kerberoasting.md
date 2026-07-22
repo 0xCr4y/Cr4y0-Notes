@@ -7,6 +7,9 @@ tags: [active-directory, kerberos, oscp, crte, crto, cpts]
 
 Un usuario de dominio autenticado puede solicitar un Service Ticket (TGS) para cualquier SPN registrado. Ese ticket viene cifrado con el hash NTLM de la cuenta de servicio — si esa cuenta tiene una contraseña débil, se puede crackear offline sin necesidad de privilegios adicionales.
 
+> [!note] Confiabilidad
+> Probado en labs de HTB y CRTO. El comportamiento puede variar según el nivel de parcheo del DC y si `PreAuthNotRequired` está activo (ver ASREPRoast como alternativa en ese caso).
+
 ## Enumerar cuentas con SPN
 
 ```powershell

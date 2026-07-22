@@ -3,6 +3,9 @@ title: WPA2 - Captura y crackeo de handshake
 tags: [wifi, oswp]
 ---
 
+> [!warning] Legal
+> Solo en redes propias o con autorización explícita — la deautenticación es un ataque activo y detectable.
+
 ## Modo monitor
 
 ```bash

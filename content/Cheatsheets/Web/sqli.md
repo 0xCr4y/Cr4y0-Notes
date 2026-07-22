@@ -3,6 +3,9 @@ title: SQL Injection - Union based
 tags: [web, sqli, oscp, cpts, ewptx]
 ---
 
+> [!note] Confiabilidad
+> Sintaxis probada en MySQL/MariaDB. Los bypasses de la sección final dependen del WAF/filtro específico — no asumir que funcionan igual en todos lados.
+
 ## Detectar el número de columnas
 
 ```sql
