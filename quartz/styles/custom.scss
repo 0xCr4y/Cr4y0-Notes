@@ -35,3 +35,10 @@ $topic-colors: (
     background-color: color-mix(in srgb, $dark 18%, transparent);
   }
 }
+
+// El footer del plugin trae hardcodeada la atribucion "Created with Quartz vX",
+// sin opcion de config para quitarla. Se oculta por CSS y se deja solo la lista
+// de links propios (ya redirigidos al repo del sitio en quartz.config.yaml).
+footer > p {
+  display: none;
+}

@@ -227,8 +227,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Codigo fuente: https://github.com/0xCr4y/Cr4y0-Notes
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
